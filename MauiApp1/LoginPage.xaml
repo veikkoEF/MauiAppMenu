@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiApp1.LoginPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="250" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Rectangle BackgroundColor="LightGray" />
+        <Image Source="placeholder.png" WidthRequest="250" />
+        <VerticalStackLayout
+            Grid.Row="1"
+            Spacing="20"
+            VerticalOptions="Center">
+            <Editor Margin="100,0" Placeholder="Benutzername" />
+            <Editor Margin="100,0" Placeholder="Passwort" />
+            <Button Margin="100,0" Text="Anmelden" />
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
